@@ -20,12 +20,26 @@ body {
 .nav__link {
     color: rgb(54, 58, 55);
     font-weight: bold;
-    text-decoration:none
+    text-decoration:none;
 }
 
 /* 10 */
 .content {
     text-align: left;
     justify-content: left;
+}
+
+/* 10 */
+.login {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+/* 10 */
+.login_items {
+    border: 2px solid black;
+    margin: 1px 20px;
+    padding: 10px;
 }
 
