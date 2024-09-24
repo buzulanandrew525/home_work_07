@@ -1,0 +1,28 @@
+/* 1 */
+body {
+    background: url("../images/car_background.jpg") no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/* 10 */
+.wrapper {
+    width: 50%;
+    background-color: azure;
+    text-align: left;
+    justify-content: left;
+    margin: 50px;
+    padding: 20px;
+}
+
+/* 10 */
+.nav__link {
+    color: gray;
+}
+
+/* 10 */
+.content {
+    text-align: left;
+    justify-content: left;
+}
