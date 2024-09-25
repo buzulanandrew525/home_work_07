@@ -43,3 +43,28 @@ body {
     padding: 10px;
 }
 
+.login__link {
+    color: black;
+    font-size: 20px;
+    text-decoration:none;
+}
+
+
+/* Hero */
+
+.hero__image {
+    width: 100%;
+}
+
+.products-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 33%;
+}
+
+.product__image {
+    width: 100%;
+}
