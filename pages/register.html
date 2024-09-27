@@ -10,31 +10,19 @@
 <body>
     <div class="wrapper">
         <div class="header">
+            <a class="header__title" href="../index.html">
+                AkenAuto
+                <img src="../images/icon-car.png" alt="icon-car" class="header__title-icon">
+            </a>
             <ul class="nav">
                 <li class="nav__item">
                     <a href="../index.html" class="nav__link">
-                        Меню
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="catalog.html" class="nav__link">
                         Каталог
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="buy_car.html" class="nav__link">
-                        Купити авто
-                    </a>
-                </li>
-                
-                <li class="nav__item">
                     <a href="sell_car.html" class="nav__link">
-                        Продати авто
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="cabinet.html" class="nav__link">
-                        Кабінет
+                        Пошук
                     </a>
                 </li>
                 <li class="nav__item">
@@ -48,6 +36,50 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <br>
+        <div class="login">
+            <div class="login_items">
+                <form action="https://tests.fomenko.top/echo/index.php" method="post">
+                    <fieldset>
+                        <legend>Регистрація</legend>
+                        <div class="form-group">
+                            <label for="login">Логін</label>
+                            <input id="login" name="login" type="text" placeholder="Логін" minlength="3" maxlength="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Вік</label>
+                            <input id="age" name="age" type="number" placeholder="Вік" min="1" max="122" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Емейл</label>
+                            <input id="email" name="email" type="email" placeholder="Емейл" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Телефон</label>
+                            <input id="tel" name="tel" type="tel" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Дата народження</label>
+                            <input id="date" name="date" type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passw">Пароль</label>
+                            <input id="passw" name="passw" type="password" placeholder="Пароль" minlength="3" maxlength="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passw">Поворіть пароль</label>
+                            <input id="passw" name="passw_repite" type="password" placeholder="Пароль" minlength="3" maxlength="10" required>
+                    </fieldset>
+                    <p>
+                        <input type="checkbox" name="agree" id="check" required>
+                        Я згоден з усіма умовами
+                    </p>
+                    <p>
+                        <input type="submit" value="Відправити" class="login__link"/>
+                    </p>
+                </form>
+            </div>
         </div>
     </div>
 </body>
