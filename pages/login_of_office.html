@@ -21,7 +21,7 @@
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="sell_car.html" class="nav__link">
+                    <a href="search.html" class="nav__link">
                         Пошук
                     </a>
                 </li>
@@ -39,24 +39,28 @@
         </div>
         <br>
         <div class="login">
-            <form class="login_items" action="https://tests.fomenko.top/echo/index.php" method="post">
+            <form class="login_items" action="https://fom.in.ua/echo" method="post">
                 <fieldset>
                     <legend>Вхід </legend>
                     <p>
                         <label>
                             Им'я користувача
-                            <input type="text" name="username" autocomplete="off" required/>
+                            <input type="text" name="username" autocomplete="off" required>
                         </label>
                     </p>
                     <p>
                         <label>
                             Пароль
-                            <input type="password" name="pwd" autocomplete="off" required/>
+                            <input type="password" name="pwd" autocomplete="off" required>
                         </label>
                     </p>
                 </fieldset>
                 <p>
-                    <input type="submit" value="Відправити" class="login__link" />
+                    <input type="checkbox" name="agree" id="check" required>
+                    Запам'ятати пароль
+                </p>
+                <p>
+                    <input type="submit" value="Відправити" class="login__link">
                 </p>
             </form>
         </div>

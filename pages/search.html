@@ -41,12 +41,26 @@
             <div class="filter__title">
                 Пошук:
             </div>
-            <form action="https://tests.fomenko.top/echo/index.php" method="get" id="selection-form" class="filter-window__item">
+            <form action="https://fom.in.ua/echo" method="get" id="selection-form" class="filter-window__item">
                 <div class="filter__block">
+                    <div class="filter-item">
+                        <div class="filter-title">Кузов:</div>
+                        <div class="filter-value">
+                            <select name="car_body" class="filter-value__car-body">
+                                <option value="Будь-яка">Будь-який</option>
+                                <option value="Sedan">Седан</option>
+                                <option value="Coupe">Купе</option>
+                                <option value="SUV">Внедорожник </option>
+                                <option value="Station_wagon">Универсал</option>
+                                <option value="Cabriolet">Кабриолет</option>
+                                <option value="Pickup">Пикап</option>
+                            </select>
+                        </div>
+                    </div>       
                     <div class="filter-item">
                         <div class="filter-title">Марка:</div>
                         <div class="filter-value">
-                            <select name="model" class="filter-value__chooser" placeholder="Марка">
+                            <select name="model" class="filter-value__chooser">
                                 <option value="Будь-яка">Будь-яка</option>
                                 <option value="Audi">Audi</option>
                                 <option value="BMW">BMW</option>
@@ -89,63 +103,24 @@
                         </div>
                     </div>
                     <div class="filter-item">
-                        <div class="filter-title">Рік випуску:</div>
+                        <div class="filter-title">Країна виробника:</div>
                         <div class="filter-value">
-                            <select name="year_from" class="filter-value__year" placeholder="с">
-                                <option value="0">від</option>
-                                <option value="2002">2002</option>
-                                <option value="2004">2004</option>
-                                <option value="2005">2005</option>
-                                <option value="2006">2006</option>
-                                <option value="2007">2007</option>
-                                <option value="2008">2008</option>
-                                <option value="2009">2009</option>
-                                <option value="2010">2010</option>
-                                <option value="2011">2011</option>
-                                <option value="2012">2012</option>
-                                <option value="2013">2013</option>
-                                <option value="2014">2014</option>
-                                <option value="2015">2015</option>
-                                <option value="2016">2016</option>
-                                <option value="2017">2017</option>
-                                <option value="2018">2018</option>
-                                <option value="2019">2019</option>
-                                <option value="2020">2020</option>
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                            </select>
-                            <select name="year_to" class="filter-value__year" placeholder="по">
-                                <option value="0">по</option>
-                                <option value="2002">2002</option>
-                                <option value="2004">2004</option>
-                                <option value="2005">2005</option>
-                                <option value="2006">2006</option>
-                                <option value="2007">2007</option>
-                                <option value="2008">2008</option>
-                                <option value="2009">2009</option>
-                                <option value="2010">2010</option>
-                                <option value="2011">2011</option>
-                                <option value="2012">2012</option>
-                                <option value="2013">2013</option>
-                                <option value="2014">2014</option>
-                                <option value="2015">2015</option>
-                                <option value="2016">2016</option>
-                                <option value="2017">2017</option>
-                                <option value="2018">2018</option>
-                                <option value="2019">2019</option>
-                                <option value="2020">2020</option>
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
+                            <select name="country_of_manufacture" class="filter-value__country_of_manufacture">
+                                <option value="Будь-яка">Будь-яка</option>
+                                <option value="Німечина">Німечина</option>
+                                <option value="Японія">Японія</option>
+                                <option value="Китай">Китай </option>
+                                <option value="Франція">Франція</option>
+                                <option value="Америка">Америка</option>
+                                <option value="Італія">Італія</option>
                             </select>
                         </div>
-                    </div>
+                    </div>  
                     <div class="filter-item">
                         <div class="filter-title">Ціна:</div>
                         <div class="filter-value">
-                            <select name="price_from" class="filter-value__money" placeholder="від">
-                                <option value="0">від</option>
+                            <select name="price_from" class="filter-value__money">
+                                <option value="від">від</option>
                                 <option value="1000">1000$</option>
                                 <option value="2000">2000$</option>
                                 <option value="3000">3000$</option>
@@ -183,8 +158,8 @@
                                 <option value="95000">95000$</option>
                                 <option value="100000">100000$</option>
                             </select>
-                            <select name="price_to" class="filter-value__money" placeholder="до">
-                                <option value="0">до</option>
+                            <select name="price_to" class="filter-value__money">
+                                <option value="до">до</option>
                                 <option value="1000">1000$</option>
                                 <option value="2000">2000$</option>
                                 <option value="3000">3000$</option>
@@ -225,10 +200,74 @@
                         </div>
                     </div>
                     <div class="filter-item">
+                        <div class="filter-title">Рік випуску:</div>
+                        <div class="filter-value">
+                            <select name="year_from" class="filter-value__year">
+                                <option value="від">від</option>
+                                <option value="2002">2002</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                            <select name="year_to" class="filter-value__year">
+                                <option value="по">по</option>
+                                <option value="2002">2002</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-title">Стан:</div>
+                        <div class="filter-value">
+                            <select name="state[]" multiple class="filter-value__state">
+                                <option value="Будь-яка">Будь-який</option>
+                                <option value="Бита">Бита</option>
+                                <option value="У кредиті">У кредиті</option>
+                                <option value="Нерозмитнена">Нерозмитнена </option>
+                            </select>
+                        </div>
+                    </div>    
+                    <div class="filter-item">
                         <div class="filter-title">Тип топлива:</div>
                         <div class="filter-value">
-                            <select name="gas_tipe" class="filter-value__gas" placeholder="Тип топлива">
-                                <option value="0">Будь-який</option>
+                            <select name="gas_tipe" class="filter-value__gas">
+                                <option value="Будь-який">Будь-який</option>
                                 <option value="Бензин">Бензин</option>
                                 <option value="Бензин_Газ">Бензин /  Газ</option>
                                 <option value="Газ">Газ</option>
@@ -241,8 +280,8 @@
                     <div class="filter-item">
                         <div class="filter-title">Коробка передач:</div>
                         <div class="filter-value">
-                            <select name="gear_box" class="filter-value__box" placeholder="Коробка передач">
-                                <option value="0">Будь-яка</option>
+                            <select name="gear_box" class="filter-value__box">
+                                <option value="Будь-яка">Будь-яка</option>
                                 <option value="Автомат">Автомат</option>
                                 <option value="Механіка">Механіка</option>
                                 <option value="Автомат+Секвентальна">Автомат + Секвентальна</option>
@@ -250,16 +289,32 @@
                         </div>
                     </div>
                     <div class="filter-item">
-                        <div class="filter-title">Місто:</div>
+                        <div class="filter-title">Колір:</div>
                         <div class="filter-value">
-                            <select name="city" class="filter-value__city" placeholder="Місто">
-                                <option value="0">Будь-який</option>
-                                <option value="Одеса">Одесса</option>
-                                <option value="Киев">Киев</option>
-                                <option value="Полтава">Полтава</option>
-                                <option value="Черкаси">Черкаси</option>
-                                <option value="Запоріжжя">Запоріжжя</option>
-                                <option value="Винница">Винница</option>
+                            <select name="color" class="filter-value__color">
+                                <option value="Будь-який">Будь-який</option>
+                                <option value="Зелений">Зелений</option>
+                                <option value="Синій">Синій</option>
+                                <option value="Чорний">Чорний</option>
+                                <option value="Червоний">Червоний</option>
+                                <option value="Фіолетовий">Фіолетовий</option>
+                                <option value="Салатовий">Салатовий</option>
+                                <option value="Помаранчевий">Помаранчевий</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="filter-title">Комфорт:</div>
+                        <div class="filter-value">
+                            <select name="сomfort" class="filter-value__сomfort">
+                                <option value="Будь-який">Будь-який</option>
+                                <option value="Люк">Люк</option>
+                                <option value="Шкіряний салон">Шкіряний салон</option>
+                                <option value="Доводчики скла">Доводчики скла</option>
+                                <option value="Датчики дощу">Датчики дощу</option>
+                                <option value="Підігрів дзеркал">Підігрів дзеркал</option>
+                                <option value="Клімат контроль">Клімат контроль</option>
+                                <option value="Підігрів сидінь">Підігрів сидінь</option>
                             </select>
                         </div>
                     </div>

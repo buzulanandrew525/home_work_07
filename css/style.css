@@ -7,41 +7,29 @@ body {
     font-family: 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
-  }
-
-/* 2 */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-  
-    min-height: 100vh;
     background-color: #649ee8;
     background-image: url(../images/car_background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-/* 2 */
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-  
-    background-color: #938d8d;
-    opacity: 0.5;
   }
 
-  
-  /* 10 */
+
+/* MAIN */
+
+select {
+    width: 80%;
+    display: block;
+    background-color: rgb(216, 189, 214);
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+
+
+/* HEADER */
+
+/* 10 */
 .wrapper {
     width: 80%;
     background-color: azure;
@@ -95,12 +83,7 @@ body::after {
     color:lightcoral;
 }
 
-/* 10 */
-.content {
-    text-align: left;
-    justify-content: left;
-}
-
+/* FORM */
 /* 10 */
 .login {
     display: flex;
@@ -110,8 +93,6 @@ body::after {
 
 /* 10 */
 .login_items {
-    background-color: rgb(161, 191, 201);
-    border: 2px solid black;
     line-height: 1.5;
     margin: 1px 20px;
     padding: 15px 15px;
@@ -120,7 +101,7 @@ body::after {
 /* 10 */
 .find,
 .login__link {
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(175, 66, 66);
     color: black;
     font-size: 20px;
 }
@@ -128,7 +109,43 @@ body::after {
 /* 20 */
 .find:hover,
 .login__link:hover {
-    background-color: rgb(109, 108, 108);
+    background-color: rgb(255, 0, 0);
+}
+
+.filter {
+    padding: 10px 10px;
+}
+.login_items,
+.filter-window__item {
+    background-color: rgb(196, 196, 196);
+    border: 2px solid black;
+}
+
+.filter__title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.filter__block {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1.5;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.filter__item {
+    margin: 5px;
+    padding: 10px;
+}
+
+.find {
+    border: 1px solid black;
+    font-size: 20px;
+    margin: 10px;
 }
 
 /* Hero */
@@ -152,7 +169,7 @@ body::after {
     color: rgb(60, 0, 255);
 }
 
-
+/* PRODUCT */
 /* 10 */
 .products-wrap {
     display: flex;
@@ -178,43 +195,4 @@ body::after {
 .footer {
     margin: 1px 5px;
     padding: 5px;
-}
-
-.filter {
-    padding: 10px 10px;
-}
-
-.filter-window__item {
-    background-color: rgb(161, 191, 201);
-    border: 2px solid black;
-}
-
-.filter__title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    margin: 5px;
-}
-
-.filter__block {
-    display: flex;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    line-height: 1.5;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 10px;
-}
-
-
-select {
-    background-color: rgb(202, 228, 236);
-    border: 1px solid black;
-    font-size: 20px;
-}
-
-.find {
-    border: 1px solid black;
-    font-size: 20px;
-    margin: 10px;
 }
